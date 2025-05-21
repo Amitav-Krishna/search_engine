@@ -3,7 +3,7 @@
 ```mermaid
 graph TD
   A[Input] --> B[Tokenization]
-
+  B --> C[Map the words to unique IDs.]
 ```
 
 ## Sources
