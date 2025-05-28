@@ -2,8 +2,24 @@
 ## Process
 ```mermaid
 graph TD
-  A[Input] --> B[Tokenization]
-  B --> C[Map the words to unique IDs.]
+  A[Input Text] --> B[Tokenization]
+  B --> C[Create Word-to-ID Mapping]
+  C --> D[One-Hot Encode Input]
+  D --> E[Initialize Network]
+  E --> F[Forward Pass]
+  F --> G[Compute Softmax]
+  G --> H[Calculate Cross-Entropy Loss]
+  H --> I[Backward Pass]
+  I --> J[Update Weights]
+  J --> F
+  F --> K[Final Word Embeddings]
+
+  subgraph "Training Loop"
+    F --> G --> H --> I --> J --> F
+  end
+
+  style A fill:#f9f,stroke:#333
+  style K fill:#6f9,stroke:#333
 ```
 
 ## Sources
