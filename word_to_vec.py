@@ -215,14 +215,3 @@ result = forward(model, [learning], return_cache=False)[0]
 
 for word in (id_to_word[id] for id in np.argsort(result)[::-1]):
     print(word)
-
-
-# In[ ]:
-
-
-def init_network(vocab_size, n_embedding):
-    model = {
-        "w1": np.random.randn(vocab_size, n_embedding),
-        "w2": np.random.randn(n_embedding, vocab_size)
-    }
-    return model
