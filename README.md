@@ -22,5 +22,8 @@ graph TD
   style K fill:#6f9,stroke:#333
 ```
 
+--- 
+UPDATE
+This README is being updated around a year after it was created, as a reference for future Amitav, this was inspired by [this blog post](https://jaketae.github.io/study/word2vec/).  Have a nice day :^)
 ## Sources
 Mikolov, Tomas, et al. "Efficient Estimation of Word Representations in Vector Space." arXiv preprint arXiv:1301.3781 (2013). https://arxiv.org/abs/1301.3781
